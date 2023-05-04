@@ -31,7 +31,7 @@
 		"start": "npm-run-all build:clean build:ts --parallel start:*",
 		"start:ts": "rollup --config --sourcemap --watch",
 		"start:storybook": "start-storybook --port 3000",
-		"build": "run-s build:*",
+		"build": "rollup -c",
 		"build:clean": "rm -rf ./dist/ && mkdir ./dist/",
 		"build:ts": "rollup --config",
 		"test": "tsc --noEmit",
